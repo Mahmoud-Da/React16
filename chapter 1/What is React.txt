@@ -1,0 +1,47 @@
+REACT:
+A JAVASCRIPT library for building user interfaces
+developed by facebook
+
+-The Heart of all REACT operations is components
+
+components:
+a piece of of user interfaces
+
+How REACT development is working:
+
+when we building application with REACT, we build a bunch of
+independent, isolated,reusable, components
+then compose them to build complex user interfaces
+
+Every REACT application has at least one component, which refer
+to as the root component.
+this component represents the entire application and contains other
+child components.
+
+=> Every REACT application is essentially a tree of components
+
+component is typically implemented as a JAVASCRIPT class that
+has:
+1- state
+2- render (display image or objecte or algatrium)
+
+state: is the date that we want to display when the component is rendered
+render: is responsible for what should the UI looks like and the output
+of the render method is REACT element which simple plain JAVASCRIPT object that react to
+DOM element
+
+the react element is not real DOM element it`s only represent it in memory
+so react keeps lightweight representation of the DOM in memory which
+refer to as the virtual DOM
+
+Unlike the real DOM this virtual DOM is cheap to create, when we
+change the state of a component, we got new react element,
+REACT will then compare this element and it`s children with the prevois one,
+it figures out what has changed, and then it will update a part of the
+real DOM to keep it in sync with the virtual DOM
+
+SO, => when we building the application with React Unlike vanilla JAVASCRIPT
+and QueryJS we no longer have to work wuth the DOM API in browser.
+
+So , when we changed the state REACT will automatically update the DOM to match
+that state (That`s why it called REACT)
